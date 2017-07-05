@@ -1,0 +1,256 @@
+body{
+    background: grey;
+    color: white;
+}
+.jumbotron{
+    background: transparent;
+}
+
+#circle1{
+
+    -webkit-animation-name: circle1;
+    -moz-animation-name: circle1;
+    -o-animation-name: circle1;
+    animation-name: circle1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background: red;
+
+
+}
+#circle2{
+
+    -webkit-animation-name: circle1;
+    -moz-animation-name: circle1;
+    -o-animation-name: circle1;
+    animation-name: circle1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background: green;
+
+
+}
+#circle3{
+
+
+    -webkit-animation-name: circle1;
+    -moz-animation-name: circle1;
+    -o-animation-name: circle1;
+    animation-name: circle1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background: violet;
+
+
+}
+#circle4{
+
+    -webkit-animation-name: circle1;
+    -moz-animation-name: circle1;
+    -o-animation-name: circle1;
+    animation-name: circle1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    width: 200px;
+    height: 200px;
+    border-radius: 400px;
+    background: blue;
+
+}
+
+@keyframes circle1 {
+    0%{
+        transform: matrix(0.2,0,0,0.2,0,0)
+    }
+    50%{
+        transform: matrix(1.2,5,5,1.2,0,200)
+
+    }
+    100%{
+        transform: matrix(0.2,0,0,0.2,0,0)
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+
+    #circle1{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 160px;
+        height: 160px;
+        border-radius: 400px;
+        background: red;
+
+
+    }
+    #circle2{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 160px;
+        height: 160px;
+        border-radius: 400px;
+        background: green;
+
+
+    }
+    #circle3{
+
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 120px;
+        height: 120px;
+        border-radius: 400px;
+        background: violet;
+
+
+    }
+    #circle4{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 120px;
+        height: 120px;
+        border-radius: 400px;
+        background: blue;
+
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    #circle1{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 200px;
+        height: 200px;
+        border-radius: 400px;
+        background: red;
+
+
+    }
+    #circle2{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 200px;
+        height: 200px;
+        border-radius: 400px;
+        background: green;
+
+
+    }
+    #circle3{
+
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 170px;
+        height: 170px;
+        border-radius: 400px;
+        background: violet;
+
+
+    }
+    #circle4{
+
+        -webkit-animation-name: circle1;
+        -moz-animation-name: circle1;
+        -o-animation-name: circle1;
+        animation-name: circle1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        width: 170px;
+        height: 170px;
+        border-radius: 400px;
+        background: blue;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

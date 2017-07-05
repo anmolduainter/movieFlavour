@@ -1,0 +1,111 @@
+body{
+    background: black;
+    color: white;
+}
+
+.jumbotron{
+    background: transparent;
+}
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+}
+.thumbnail>img{
+    opacity: 0.5;
+}
+
+#poster_image{
+
+    -webkit-animation-name: poster_image_anmimation;
+    -moz-animation-name: poster_image_anmimation;
+    -o-animation-name: poster_image_anmimation;
+    animation-name: poster_image_anmimation;
+
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes poster_image_anmimation{
+
+    0%{
+        transform: matrix(1.2,5,5,1.2,0,0)
+    }
+
+    50%{
+        transform: matrix(1.5,0,0,1.5,0,0);
+    }
+
+    100%{
+        transform: matrix(1,0,0,1,0,0);
+    }
+
+}
+
+@media (max-width: 575px) {
+
+
+    .thumbnail>img{
+        height: 130px;
+    }
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    .thumbnail>img{
+
+        height: 160px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    .thumbnail>img{
+
+        height: 180px;
+
+    }
+
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+    .thumbnail>img{
+
+        height: 200px;
+
+    }
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+
+    .thumbnail>img{
+
+        height: 230px;
+
+    }
+
+
+}
