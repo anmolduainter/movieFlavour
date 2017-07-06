@@ -13,12 +13,26 @@ let ButtonNotLike;
 let movieForward;
 let posterTraversal=0;
 let countButtonClick=0;
+let fixedBack;
+
+let BtnStarted;
+
 $(function(){
 
-    localStorage.clear('genres');
+
+    BtnStarted=$('#started')
     container=$('.container');
-    getGenres();
-    PopularMoviesList(popularUrlPageNo);
+    fixedBack=$('#fixed');
+    BtnStarted.click(function(){
+
+        container.empty();
+        fixedBack.css('background','black')
+        localStorage.clear('genres');
+        getGenres();
+        PopularMoviesList(popularUrlPageNo);
+
+
+    });
 
 });
 

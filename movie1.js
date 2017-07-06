@@ -108,9 +108,11 @@ function objcData(title,poster,overview,releaseDate){
 
 function processImages(){
 
+    savetoLocal();
+
      for(i in dataArray){
 
-         let a=`<img  class="imageDetails" id="movieDetails${+i+1}" src="`+poster_url+dataArray[i].poster+`" height="220px">`;
+         let a=`<img  class="imageDetails" id="${i}" src="`+poster_url+dataArray[i].poster+`" height="220px">`;
 
          imageString=imageString+a;
 
@@ -139,25 +141,20 @@ function putintoDOM(){
 
     container.append(body)
     let image=$('img');
-    image.hover(imageInside,imageOutside)
+    image.click(imageClick)
 }
 
-function imageInside(ev){
+function savetoLocal(){
 
-    console.log($(ev.target).attr('id'))
-
-    let a=$(ev.target);
-
-    let b=$(`<h1>HELLO</h1>`)
-    // a.css('transform','rotateY(180deg)').css('transition','transform 2s').css('perspective','200px');
-
-    a.css('z-index','1').css('height','500px');
+    localStorage.setItem("imageDetails",JSON.stringify(dataArray))
 
 }
 
-function imageOutside(ev){
 
-    let a=$(ev.target);
-    console.log($(ev.target).attr('id'))
-    // a.css('transform','rotateY(180deg)').css('transition','transform 2s').css('perspective','200px')
+function imageClick(ev){
+
+   localStorage.setItem("clicked",$(ev.target).attr('id'))
+
+    window.open("movieDesc.html","_self");
+
 }

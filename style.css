@@ -1,6 +1,15 @@
 body{
-    background: black;
     color: white;
+}
+
+#fixed{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(50%);
+    background: url("wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .jumbotron{
@@ -108,4 +117,12 @@ body{
     }
 
 
+}
+
+#started{
+
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 20px;
 }
